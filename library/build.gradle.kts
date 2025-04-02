@@ -8,7 +8,7 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "io.github.kotlin"
+group = "io.github.sametalpdeger"
 version = "1.0.0"
 
 kotlin {
@@ -62,7 +62,7 @@ mavenPublishing {
         name = "My library"
         description = "A library."
         inceptionYear = "2024"
-        url = "https://github.com/kotlin/multiplatform-library-template/"
+        url = "https://github.com/kotlin/kotmark/"
         licenses {
             license {
                 name = "XXX"
