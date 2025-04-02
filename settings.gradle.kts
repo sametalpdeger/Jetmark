@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "kotmark"
+rootProject.name = "jetmark"
 include(":library")

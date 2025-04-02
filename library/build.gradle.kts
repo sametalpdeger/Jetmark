@@ -23,7 +23,6 @@ kotlin {
     iosX64()
     iosArm64()
     iosSimulatorArm64()
-    linuxX64()
 
     sourceSets {
         val commonMain by getting {
@@ -59,28 +58,30 @@ mavenPublishing {
     coordinates(group.toString(), "library", version.toString())
 
     pom {
-        name = "Kotmark"
-        description = "A library."
-        inceptionYear = "2024"
-        url = "https://github.com/kotlin/kotmark/"
+        name.set("Jetmark")
+        description.set("A description of what my library does.")
+        inceptionYear.set("2020")
+        url.set("https://github.com/sametalpdeger/Jetmark/")
         licenses {
             license {
-                name = "XXX"
-                url = "YYY"
-                distribution = "ZZZ"
+                name.set("The Apache License, Version 2.0")
+                url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                distribution.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
             }
         }
         developers {
             developer {
-                id = "XXX"
-                name = "YYY"
-                url = "ZZZ"
+                id.set("sametalpdeger")
+                name.set("sametalpdeger")
+                url.set("https://github.com/sametalpdeger")
             }
         }
         scm {
-            url = "XXX"
-            connection = "YYY"
-            developerConnection = "ZZZ"
+            url.set("https://github.com/sametalpdeger/jetmark/")
+            connection.set("scm:git:git://github.com/sametalpdeger/jetmark.git")
+            developerConnection.set("scm:git:ssh://git@github.com/sametalpdeger/jetmark.git")
         }
+
     }
 }
+
