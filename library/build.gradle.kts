@@ -40,7 +40,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+    namespace = "io.github.sametalpdeger"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -59,7 +59,7 @@ mavenPublishing {
     coordinates(group.toString(), "library", version.toString())
 
     pom {
-        name = "My library"
+        name = "Kotmark"
         description = "A library."
         inceptionYear = "2024"
         url = "https://github.com/kotlin/kotmark/"
