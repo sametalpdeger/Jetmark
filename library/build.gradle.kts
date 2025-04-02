@@ -8,7 +8,7 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "io.github.sametalpdeger"
+group = "io.github.kotlin"
 version = "1.0.0"
 
 kotlin {
@@ -23,6 +23,7 @@ kotlin {
     iosX64()
     iosArm64()
     iosSimulatorArm64()
+    linuxX64()
 
     sourceSets {
         val commonMain by getting {
@@ -39,7 +40,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.sametalpdeger"
+    namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -58,30 +59,28 @@ mavenPublishing {
     coordinates(group.toString(), "library", version.toString())
 
     pom {
-        name.set("Jetmark")
-        description.set("A description of what my library does.")
-        inceptionYear.set("2020")
-        url.set("https://github.com/sametalpdeger/Jetmark/")
+        name = "My library"
+        description = "A library."
+        inceptionYear = "2024"
+        url = "https://github.com/kotlin/multiplatform-library-template/"
         licenses {
             license {
-                name.set("The Apache License, Version 2.0")
-                url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                distribution.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                name = "XXX"
+                url = "YYY"
+                distribution = "ZZZ"
             }
         }
         developers {
             developer {
-                id.set("sametalpdeger")
-                name.set("sametalpdeger")
-                url.set("https://github.com/sametalpdeger")
+                id = "XXX"
+                name = "YYY"
+                url = "ZZZ"
             }
         }
         scm {
-            url.set("https://github.com/sametalpdeger/jetmark/")
-            connection.set("scm:git:git://github.com/sametalpdeger/jetmark.git")
-            developerConnection.set("scm:git:ssh://git@github.com/sametalpdeger/jetmark.git")
+            url = "XXX"
+            connection = "YYY"
+            developerConnection = "ZZZ"
         }
-
     }
 }
-
